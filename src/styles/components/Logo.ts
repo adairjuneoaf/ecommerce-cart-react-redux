@@ -9,24 +9,32 @@ export const Content = styled.div`
   flex-direction: row;
   justify-content: center;
 
-  .left,
-  .right {
+  .text {
     font-family: 'Inter', sans-serif;
     font-weight: 700;
     font-size: 1.875rem;
     color: var(--white-default);
-  }
 
-  div {
-    width: 10px;
-    height: 10px;
+    position: relative;
 
-    bottom: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: flex-end;
 
-    border-radius: 5px;
+    &::after {
+      position: absolute;
 
-    margin: 16px 1px 0 1px;
+      content: '';
+      width: 10px;
+      height: 10px;
 
-    background: var(--purple-300);
+      bottom: 7px;
+      right: -10px;
+
+      border-radius: 5px;
+
+      background: var(--purple-300);
+    }
   }
 `
