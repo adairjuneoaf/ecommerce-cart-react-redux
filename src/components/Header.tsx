@@ -19,8 +19,9 @@ const Header: React.FC = () => {
         <Link to={'about'}>About us</Link>
       </nav>
       <section className="dataSession">
-        <Link to={'/cart'}>
+        <Link to={'/cart'} className="linkCart">
           <FiShoppingCart className="icon" />
+          <div className="countCart">5</div>
         </Link>
         <div className="divider" />
         <button type="button">

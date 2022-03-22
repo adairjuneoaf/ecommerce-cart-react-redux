@@ -47,6 +47,40 @@ export const Content = styled.header`
     flex-direction: row;
     justify-content: space-around;
 
+    .linkCart {
+      position: relative;
+
+      .countCart {
+        position: absolute;
+
+        top: 0;
+        right: 0;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+
+        font-size: 0.75rem;
+        font-weight: 700;
+
+        color: var(--white-default);
+
+        width: 16px;
+        height: 16px;
+
+        border-radius: 7px;
+
+        background: var(--purple-300);
+      }
+
+      &:hover {
+        a {
+          color: red;
+        }
+      }
+    }
+
     .divider {
       width: 2px;
       height: 48px;
