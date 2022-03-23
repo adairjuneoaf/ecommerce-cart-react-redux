@@ -5,7 +5,7 @@ export const Content = styled.section`
     width: 100%;
     height: auto;
 
-    h3 {
+    > h3 {
       margin-bottom: 18px;
     }
 

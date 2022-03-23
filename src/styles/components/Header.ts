@@ -47,36 +47,40 @@ export const Content = styled.header`
     flex-direction: row;
     justify-content: space-around;
 
-    .linkCart {
+    .cart {
       position: relative;
 
-      .countCart {
-        position: absolute;
+      .linkCart {
+        position: relative;
 
-        top: 0;
-        right: 0;
+        .countCart {
+          position: absolute;
 
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: row;
+          top: 0;
+          left: 14px;
 
-        font-size: 0.75rem;
-        font-weight: 700;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-direction: row;
 
-        color: var(--white-default);
+          font-size: 0.75rem;
+          font-weight: 700;
 
-        width: 16px;
-        height: 16px;
+          color: var(--white-default);
 
-        border-radius: 7px;
+          width: 16px;
+          height: 16px;
 
-        background: var(--purple-300);
-      }
+          border-radius: 7px;
 
-      &:hover {
-        a {
-          color: red;
+          background: var(--purple-300);
+        }
+
+        &:hover {
+          a {
+            color: red;
+          }
         }
       }
     }
